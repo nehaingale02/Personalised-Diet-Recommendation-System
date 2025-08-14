@@ -308,65 +308,6 @@
             Herbs like aloe vera and cooling spices help maintain equilibrium.</div>
     </div>
 
-    <!-- QUIZ SECTION -->
-    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section">
-        <div class="container py-5">
-            <section id="quizDropdown">
-                <div class="container">
-                    <div class="row">
-                        <!-- BMI Calculator -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="review-wrap zoom play-on-scroll delay-2">
-                                <div class="review-content">
-                                    <div class="quiz-img-container">
-                                        <img src="{{ url_for('static', filename='assets/BMI Calculator.png') | replace(' ', '%30') }}" alt="BMI Calculator">
-                                    </div>
-                                </div>
-                                <div class="review-info text-center p-4">
-                                    <h5 class="card-title mb-3">BMI Calculator</h5>
-                                    <p class="mb-4">Calculate your BMI and see where you stand. Spoiler: it's not just about the number on the scale.</p>
-                                    <a href="{{ url_for('bmi') }}" class="btn btn-success w-100">Know your BMI</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Diet Planner -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="review-wrap zoom play-on-scroll delay-2">
-                                <div class="review-content">
-                                    <div class="quiz-img-container">
-                                        <img src="{{ url_for('static', filename='assets/Diet Planner.png') | replace(' ', '%20') }}" alt="Diet Planner">
-                                    </div>
-                                </div>
-                                <div class="review-info text-center p-4">
-                                    <h5 class="card-title mb-3">Diet Planner</h5>
-                                    <p class="mb-4">Get personalized diet recommendations based on your body type and health goals.</p>
-                                    <a href="{{ url_for('diet_planner') }}" class="btn btn-success w-100">Get Recommendation</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Dosha Quiz -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="review-wrap zoom play-on-scroll delay-2">
-                                <div class="review-content">
-                                    <div class="quiz-img-container">
-                                        <img src="{{ url_for('static', filename='assets/doshas.png') }}" alt="Dosha Quiz">
-                                    </div>
-                                </div>
-                                <div class="review-info text-center p-4">
-                                    <h5 class="card-title mb-3">Dosha Questionnaire</h5>
-                                    <p class="mb-4">Discover your unique dosha type and get personalized wellness recommendations.</p>
-                                    <a href="{{ url_for('dosha_quiz') }}" class="btn btn-success w-100">Take Quiz</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-
     <!-- CONTACT SECTION -->
     <section class="footer bg-img" 
              style="background-image: url('{{ url_for('static', filename='assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg') }}');">

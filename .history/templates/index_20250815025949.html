@@ -297,140 +297,235 @@
 
         <div class="faq-item" onclick="toggleFAQ(3)">
             <span>04</span>
-            <h3>What is Pitta ?</h3>
+            <h3> What is Pitta ?</h3>
             <div class="icon">+</div>
         </div>
-        <div class="faq-content">Pitta Dosha in Ayurveda is composed of fire (Agni) and water (Jala) elements, governing metabolism, 
-            digestion, and energy transformation. It controls body temperature, hunger, thirst, and intelligence. Pitta is hot, sharp, 
-            oily, and intense in nature. When balanced, it promotes courage, intelligence, and strong digestion. However, excess Pitta 
-            can lead to inflammation, acidity, anger, and skin issues, while deficiency may cause poor digestion and low energy. 
-            To balance Pitta, Ayurveda recommends cooling foods, moderate exercise, and stress management. 
-            Herbs like aloe vera and cooling spices help maintain equilibrium.</div>
+        <div class="faq-content">Pitta is composed of fire (Agni) and water (Jala) elements, responsible for digestion, 
+            metabolism, and transformation. It governs intelligence, body temperature, and vision. Pitta's nature is hot, 
+            sharp, oily, and intense. When balanced, it enhances confidence, digestion, and intellect. However, excess Pitta 
+            leads to anger, acidity, inflammation, and skin rashes, while deficiency causes low energy and weak digestion. 
+            To balance Pitta, Ayurveda suggests cooling foods, calming activities, and stress management. 
+            Herbs like coriander, fennel, and aloe vera help regulate Pitta.</div>
+
     </div>
 
-    <!-- QUIZ SECTION -->
-    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section">
-        <div class="container py-5">
-            <section id="quizDropdown">
-                <div class="container">
-                    <div class="row">
-                        <!-- BMI Calculator -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="review-wrap zoom play-on-scroll delay-2">
-                                <div class="review-content">
-                                    <div class="quiz-img-container">
-                                        <img src="{{ url_for('static', filename='assets/BMI Calculator.png') | replace(' ', '%30') }}" alt="BMI Calculator">
-                                    </div>
-                                </div>
-                                <div class="review-info text-center p-4">
-                                    <h5 class="card-title mb-3">BMI Calculator</h5>
-                                    <p class="mb-4">Calculate your BMI and see where you stand. Spoiler: it's not just about the number on the scale.</p>
-                                    <a href="{{ url_for('bmi') }}" class="btn btn-success w-100">Know your BMI</a>
+    <!-- Aayurvedic Details SECTION -->
+
+<!-- QUIZ SECTION -->
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section">
+    <div class="container py-5">
+        <section id="quizDropdown">
+            <div class="container">
+                <div class="row">
+                    <!-- BMI Calculator -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="review-wrap zoom play-on-scroll delay-2">
+                            <div class="review-content">
+                                <div class="quiz-img-container">
+                                    <img src="{{ url_for('static', filename='assets/BMI Calculator.png') | replace(' ', '%30') }}" alt="BMI Calculator">
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Diet Planner -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="review-wrap zoom play-on-scroll delay-2">
-                                <div class="review-content">
-                                    <div class="quiz-img-container">
-                                        <img src="{{ url_for('static', filename='assets/Diet Planner.png') | replace(' ', '%20') }}" alt="Diet Planner">
-                                    </div>
-                                </div>
-                                <div class="review-info text-center p-4">
-                                    <h5 class="card-title mb-3">Diet Planner</h5>
-                                    <p class="mb-4">Get personalized diet recommendations based on your body type and health goals.</p>
-                                    <a href="{{ url_for('diet_planner') }}" class="btn btn-success w-100">Get Recommendation</a>
-                                </div>
+                            <div class="review-info text-center p-4">
+                                <h5 class="card-title mb-3">BMI Calculator</h5>
+                                <p class="mb-4">Calculate your BMI and see where you stand. Spoiler: it's not just about the number on the scale.</p>
+                                <a href="{{ url_for('bmi') }}" class="btn btn-success w-100">Know your BMI</a>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Dosha Quiz -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="review-wrap zoom play-on-scroll delay-2">
-                                <div class="review-content">
-                                    <div class="quiz-img-container">
-                                        <img src="{{ url_for('static', filename='assets/doshas.png') }}" alt="Dosha Quiz">
-                                    </div>
+                    <!-- Diet Planner -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="review-wrap zoom play-on-scroll delay-2">
+                            <div class="review-content">
+                                <div class="quiz-img-container">
+                                    <img src="{{ url_for('static', filename='assets/Diet Planner.png') | replace(' ', '%20') }}" alt="Diet Planner">
                                 </div>
-                                <div class="review-info text-center p-4">
-                                    <h5 class="card-title mb-3">Dosha Questionnaire</h5>
-                                    <p class="mb-4">Discover your unique dosha type and get personalized wellness recommendations.</p>
-                                    <a href="{{ url_for('dosha_quiz') }}" class="btn btn-success w-100">Take Quiz</a>
+                            </div>
+                            <div class="review-info text-center p-4">
+                                <h5 class="card-title mb-3">Diet Planner</h5>
+                                <p class="mb-4">Get personalized diet recommendations based on your body type and health goals.</p>
+                                <a href="{{ url_for('diet_planner') }}" class="btn btn-success w-100">Get Recommendation</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dosha Quiz -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="review-wrap zoom play-on-scroll delay-2">
+                            <div class="review-content">
+                                <div class="quiz-img-container">
+                                    <img src="{{ url_for('static', filename='assets/doshas.png') }}" alt="Dosha Quiz">
                                 </div>
+                            </div>
+                            <div class="review-info text-center p-4">
+                                <h5 class="card-title mb-3">Dosha Questionnaire</h5>
+                                <p class="mb-4">Discover your unique dosha type and get personalized wellness recommendations.</p>
+                                <a href="{{ url_for('dosha_quiz') }}" class="btn btn-success w-100">Take Quiz</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- END QUIZ SECTION -->
 
-    <!-- CONTACT SECTION -->
+<!-- CONTACT SECTION -->
     <section class="footer bg-img" 
              style="background-image: url('{{ url_for('static', filename='assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg') }}');">
-        <div class="container">
-            <div class="row">
-                <!-- Left Column: Branding & Contact -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h1>Dosha Align</h1>
-                    <br>
-                    <p>Have questions or need guidance on your wellness journey? Reach out to us—we're 
-                        here to help you align your dosha and lifestyle effortlessly!</p>
-                    <br>
-                    <p><strong>Email:</strong> 📧 hello@dosalign.comha</p>
-                    <p><strong>Phone:</strong> 📞+91-908-555-0199</p>
-                    <p><strong>Website:</strong> <a href="#">DoshaAlign.com</a></p>
-                    <p><strong>Address:</strong>📍 123 Wellness Way, Health City, Mumbai 400067 </p>
-                </div>
+    <div class="Contact">
+        <div class="row">
+            <!-- Left Column: Branding & Contact -->
+            <div class="col-6 col-xs-12">
+                <h1>Dosha Align</h1>
+                <br>
+                <p>Have questions or need guidance on your wellness journey? Reach out to us—we're 
+                    here to help you align your dosha and lifestyle effortlessly!</p>
+                <br>
+                <p><strong>Email:</strong> 📧 hello@dosalign.comha</p>
+                <p><strong>Phone:</strong> 📞+91-908-555-0199</p>
+                <p><strong>Website:</strong> <a href="#">DoshaAlign.com</a></p>
+                <p><strong>Address:</strong>📍 123 Wellness Way, Health City, Mumbai 400067 </p>
+            </div>
 
-                <!-- Middle Column: Navigation -->
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h1>Subscribe & Media</h1>
-                    <br>
-                    <p>Stay updated with the latest wellness tips and personalized diet plans! 
-                        Subscribe now and take the first step toward aligning your dosha. 🌿</p>
-                    <div class="input-group">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button>Subscribe</button>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+            <!-- Middle Column: Navigation -->
+            <div class="col-4 col-xs-12">
+                <h1>Subscribe & Media</h1>
+                <br>
+                <p>Stay updated with the latest wellness tips and personalized diet plans! 
+                    Subscribe now and take the first step toward aligning your dosha. 🌿</p>
+                <div class="input-group">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button>Subscribe</button>
                 </div>
-
-                <!-- Right Column: Quick Links -->
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <h1>Details</h1>
-                    <br>
-                    <p><a href="#home">Home</a></p>
-                    <p><a href="#about">About</a></p>
-                    <p><a href="#quizDropdown">Quiz</a></p>
-                    <p><a href="#Contact">Contact Us</a></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="footer-brand" style="display: flex; align-items: center; gap: 10px;">
-                        <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="Dosha Align Logo" style="height: 50px;" />
-                        <strong style="font-size: 20px; color: black;">Dosha Align</strong>
-                    </div>
-                </div>
-                <div class="col-md-6 text-end">
-                    <p style="color: black;">© 2025 DoshaAlign. All rights reserved.</p>
-                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+
+<!-- END FOOTER SECTION -->
+ <!--Contact Card-->
+ <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f1fbf9;
+      color: #0a0a0a;
+    }
+
+    .contact-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1;
+      min-width: 300px;
+      margin: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      font-family: 'Georgia', serif;
+    }
+
+    .contact-form button {
+      background-color: #2e6f59;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 20px;
+      font-family: 'Georgia', serif;
+      cursor: pointer;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 20px 50px;
+      background-color: #f1fbf9;
+      font-size: 0.9rem;
+    }
+
+    .footer img {
+      width: 50px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-section">
+    <div class="contact-form">
+        <h3 style="font-weight: bold;">Get in Touch with Us</h3>
+      <form>
+        <input type="text" placeholder="First" required />
+        <input type="text" placeholder="Last" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Address" rows="4" required></textarea>
+        <button type="submit">Send It!</button>
+      </form>
+    </div>
+
+     <!-- Middle Column: Navigation -->
+     <div class="col-2 col-xs-12">
+        <h1>Details</h1>
+        <br>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#about">About</a></p>
+        <p><a href="#quizDropdown">Quiz</a></p>
+        <p><a href="#Contact">Contact Us</a></p>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-brand" style="display: flex; align-items: center; gap: 10px;">
+        <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="Dosha Align Logo" style="height: 50px;" />
+        <strong style="font-size: 20px; color: black;">Dosha Align</strong>
+      </div>
+    <p style="color: black;">© 2025 DoshaAlign. All rights reserved.</p>
+
+  </footer>
+ <!--Contact Card End-->
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
