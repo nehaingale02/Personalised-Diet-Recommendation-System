@@ -4,7 +4,8 @@ Personalised Diet Recomendation system Using Aryurvedic Dosha &amp; Disease Spec
 
 A Flask-based web application that provides personalized diet recommendations based on Ayurvedic principles, dosha types, and health conditions.
 
-**🌐 Live Demo: [https://personalised-diet-recommendation-system.onrender.com/](https://personalised-diet-recommendation-system.onrender.com/)**
+**🌐 Live Demo: [https://personalised-diet-recommendation-system.onrender.com/]
+(https://personalised-diet-recommendation-system.onrender.com/)
 
 ## Features
 
@@ -30,7 +31,6 @@ A Flask-based web application that provides personalized diet recommendations ba
 ├── requirements.txt       # Python dependencies
 ├── render.yaml           # Render deployment configuration
 ├── Procfile             # Alternative deployment config
-├── .gitignore           # Git ignore rules
 ├── templates/            # HTML templates
 │   ├── index.html       # Home page
 │   ├── login.html       # Login page
@@ -60,4 +60,4 @@ A Flask-based web application that provides personalized diet recommendations ba
 
 - `PORT` - Server port (default: 5000)
 
-
+📜 License: This project is licensed under the MIT License – see the [LICENSE](./LICENSE%20TEMPLATE) file for details.
